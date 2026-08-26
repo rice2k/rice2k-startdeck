@@ -1,0 +1,30 @@
+Rice2k Startpage - Validation Report
+====================================
+
+Start page checks
+-----------------
+- JavaScript syntax: passed in the previously validated current build.
+- CSS parsing: passed in the previously validated current build.
+- Duplicate HTML IDs: none found in the current build.
+- Internal # links / DOM ID references: previously checked clean.
+
+Installer fix checks
+--------------------
+- Removed the fragile: -SourceDir "%~dp0" argument from Setup.cmd.
+- install.ps1 now defaults to $PSScriptRoot and normalizes any optional SourceDir.
+- Added an explicit index.html existence check before Copy-Item.
+- Setup.cmd checks both index.html and install.ps1 before launching PowerShell.
+- Setup.cmd/install.ps1 are copied to C:\Startpage for safe re-runs.
+- Restore utility retained.
+- ZIP integrity tested after packaging.
+
+Root cause fixed
+----------------
+%~dp0 always ends in a backslash. Passing that value as a separately quoted
+PowerShell argument could arrive with a literal trailing quote, producing a path
+like ...\Rice2k_Startpage_Setup"\index.html and causing Copy-Item to reject it.
+
+New-tab link behavior update (2026-08-25):
+- Category/bookmark website links now open with target=_blank.
+- Static external links were checked for target=_blank and rel=noopener noreferrer.
+- Dynamically generated anime release links already open in a new tab.
