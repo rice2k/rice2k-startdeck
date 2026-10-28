@@ -4,6 +4,8 @@ RiceDeck is a polished personal start page for Rice2k: a fast, customizable brow
 
 [Live demo](https://rice2k.github.io/rice2k-startdeck/) · [Download Windows setup ZIP](releases/RiceDeck_Windows_Setup.zip)
 
+**New:** [Rice2K Project Explorer — search all public projects](https://rice2k.github.io/rice2k-startdeck/projects/) · [Search starred repositories](https://rice2k.github.io/rice2k-startdeck/projects/?scope=starred)
+
 ## Screenshots
 
 ![RiceDeck desktop dashboard](assets/screenshots/ricedeck-desktop.png)
@@ -54,10 +56,17 @@ Supported browsers include Microsoft Edge, Google Chrome, Firefox, Brave, Vivald
 
 ```text
 index.html                         Static start page used by GitHub Pages
+projects/                          Separate searchable GitHub project explorer (HTML/CSS/JS)
 installer/                         Windows setup and restore scripts
 releases/RiceDeck_Windows_Setup.zip Downloadable installer package
 assets/screenshots/                Actual captured screenshots of the page
 ```
+
+## Search Your GitHub Projects
+
+The [Rice2K Project Explorer](https://rice2k.github.io/rice2k-startdeck/projects/) is a separate, no-cost static directory under this GitHub Pages site. Search public projects by repository name, topic, keyword, category, or language; browse public starred repositories; and sort by update date or stars. It uses GitHub's public API, caches responses briefly, and never requests private repository access.
+
+For implementation and limitations, see [Project Explorer documentation](projects/README.md).
 
 ## Data And Credits
 
