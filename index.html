@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0b1020">
-  <title>RiceDeck - Rice2k Start Page</title>
+  <title>RiceDeck | Rice2K Custom Start Page, Tools and Project Search</title>
+  <meta name="description" content="Customize the free RiceDeck browser start page with favorites, weather, anime releases and shortcuts. Explore Rice2K Windows utilities, GraalOnline projects and retro web archives.">
+  <link rel="canonical" href="https://rice2k.github.io/rice2k-startdeck/">
   <link rel="preconnect" href="https://tsuzuki.top" crossorigin>
   <link rel="preconnect" href="https://graphql.anilist.co" crossorigin>
   <link rel="preconnect" href="https://s4.anilist.co" crossorigin>
@@ -96,7 +98,8 @@
       font-weight: 950;
     }
 
-    .top-actions { display: flex; gap: 8px; }
+    .top-actions { display: flex; gap: 8px; align-items: center; }
+    .project-link { display: inline-flex; align-items: center; font-size: .78rem; font-weight: 750; text-decoration: none; white-space: nowrap; }
     .icon-btn, .text-btn, .primary-btn, .danger-btn {
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -660,6 +663,7 @@
         <span>RiceDeck</span>
       </div>
       <div class="top-actions">
+        <a class="text-btn project-link" href="https://rice2k.github.io/rice2k-startdeck/projects/" target="_blank" rel="noopener noreferrer" title="Search Rice2K projects" aria-label="Search Rice2K public GitHub projects">Projects</a>
         <button class="icon-btn" id="themeToggle" type="button" title="Toggle theme" aria-label="Toggle theme">◐</button>
         <button class="icon-btn" id="settingsOpen" type="button" title="Settings" aria-label="Open settings">⚙</button>
       </div>
@@ -760,7 +764,7 @@
       <div class="release-note"><span id="releaseStatus">Loading current release information…</span> Data: <a href="https://anilist.co/" target="_blank" rel="noopener noreferrer">AniList</a> + <a href="https://tsuzuki.top/" target="_blank" rel="noopener noreferrer">Tsuzuki</a>.</div>
     </section>
 
-    <footer class="footer">Everything you customize is stored locally in your browser. No account or server is required.</footer>
+    <footer class="footer">Everything you customize is stored locally in your browser. No account or server is required. · <a href="https://rice2k.github.io/rice2k-startdeck/projects/" target="_blank" rel="noopener noreferrer">Search Rice2K projects</a></footer>
   </main>
 
   <dialog id="settingsDialog">
