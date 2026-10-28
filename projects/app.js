@@ -143,6 +143,11 @@
   }
   function editDistanceAtMostOne(a,b) {
     if (Math.abs(a.length-b.length)>1) return false;
+    if (a.length===b.length) {
+      const different=[];
+      for (let k=0;k<a.length;k++) if (a[k]!==b[k]) different.push(k);
+      if (different.length===2 && different[1]===different[0]+1 && a[different[0]]===b[different[1]] && a[different[1]]===b[different[0]]) return true;
+    }
     let i=0,j=0,edits=0;
     while (i<a.length && j<b.length) {
       if (a[i]===b[j]) {i++;j++;continue;}
