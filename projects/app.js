@@ -8,11 +8,11 @@
   const PAGE_SIZE = 24;
   const FEATURED = ["r2k-rescuedesk-usb","rice2k-magic-tasks","old-free-online-resources","Cyber-Tool-Atlas","rice2k-rainmeter-control-bar","Graalians-Discord-Server-Tool-Hub","Rice2k-Folder-Vault","CoolKids-Archive-Website"];
   const ALIASES = {
-    "gs2":["graal","script"], "graalscript":["graal","script"], "gmap":["graal","map"],
-    "gani":["graal","animation"], "pc":["computer","windows"], "repair":["rescue","windows"],
+    "gs2":["graalscript2"], "graalscript":["gs2"], "graalscript2":["gs2"],
+    "gmap":["gmaps"], "gani":["animation"], "pc":["computer"], "repair":["rescue","diagnostics","troubleshooting"],
     "win11":["windows"], "win10":["windows"], "oldweb":["retro","archive"],
     "retro":["archive"], "powershell":["ps1"], "scripting":["scripts"], "vault":["encryption"],
-    "discord":["graalians"], "startpage":["dashboard"]
+    "startpage":["homepage"]
   };
   const SEEDS = [
     ["r2k-rescuedesk-usb","Service-bench USB command center for Windows repair, WinPE, triage and backups.","PowerShell","pc-repair windows-repair technician-toolkit usb-toolkit"],
@@ -134,7 +134,7 @@
     return found;
   }
   function tokens(q) {
-    const result = normalize(q).split(/\s+/).filter(Boolean);
+    const result = normalize(q).replace(/\bgraal script (?:2|two)\b/g,"gs2").split(/\s+/).filter(Boolean);
     return result;
   }
   function fuzzyToken(token, words) {
