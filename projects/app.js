@@ -135,7 +135,7 @@
   }
   function tokens(q) {
     const result = normalize(q).split(/\s+/).filter(Boolean);
-    return result.flatMap(t=>[t,...(ALIASES[t]||[])]);
+    return result;
   }
   function fuzzyToken(token, words) {
     if (token.length<5) return false;
@@ -163,12 +163,18 @@
     const words = all.split(" ");
     let score = 0;
     for (const t of terms) {
-      if (name.includes(t)) score += 12;
-      else if (topics.includes(t)) score += 9;
-      else if (category.includes(t) || lang.includes(t)) score += 7;
-      else if (description.includes(t)) score += 4;
-      else if (fuzzyToken(t,words)) score += 2;
-      else return -1;
+      const choices = [t,...(ALIASES[t]||[])];
+      let best = 0;
+      for (const word of choices) {
+        const weight = word === t ? 1 : 0.5;
+        if (name.includes(word)) best = Math.max(best,12*weight);
+        else if (topics.includes(word)) best = Math.max(best,9*weight);
+        else if (category.includes(word) || lang.includes(word)) best = Math.max(best,7*weight);
+        else if (description.includes(word)) best = Math.max(best,4*weight);
+        else if (fuzzyToken(word,words)) best = Math.max(best,2*weight);
+      }
+      if (!best) return -1;
+      score += best;
     }
     return score;
   }
