@@ -56,6 +56,13 @@ The existing RiceDeck homepage, installer, and core app are unchanged. No paid s
 - Check external links and live-site links.
 - Disconnect temporarily to test cached data and the labeled fallback catalog.
 
+## Static search and resilience
+
+- [Complete static repository list](all-projects.html) — browse all 62 public repositories without JavaScript. Grouped static HTML links are easier for crawlers to discover.
+- [Static metadata fallback](catalog.json) — an October 27, 2026 public-repository snapshot with verified descriptions where available. The browser search uses this complete fallback if GitHub's API is unavailable and no recent cache exists.
+- The live GitHub API remains the source for the latest stars, last update dates, new repositories, and current topics whenever it is reachable.
+- The snapshot is not a mirror of private repository content, source code or releases, and will require a manual update if many new public repositories are added.
+
 ## Limitations
 
 GitHub can rate-limit unauthenticated API calls. Caches can be up to two hours old. Search is metadata-based and does not index every source code file. The Starred collection is public and read-only.
