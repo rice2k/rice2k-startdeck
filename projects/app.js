@@ -103,6 +103,13 @@
   function starterData() {
     return SEEDS.map(x=>({name:x[0],description:x[1],language:x[2],topics:x[3].split(" "),owner:{login:OWNER},private:false,stargazers_count:0,html_url:"https://github.com/"+OWNER+"/"+x[0]}));
   }
+  async function fetchStaticCatalog() {
+    const response = await fetch("./catalog.json", {cache:"force-cache"});
+    if (!response.ok) throw new Error("Local public catalog unavailable");
+    const payload = await response.json();
+    if (payload.owner !== OWNER || !Array.isArray(payload.repositories)) throw new Error("Invalid public catalog");
+    return payload.repositories.filter(r=>r && r.private === false);
+  }
   function cacheKey() { return "rice2k-project-explorer-v2-"+state.scope; }
   function getCached() {
     try {
@@ -300,8 +307,14 @@
         data=fallback.map(prepare).filter(Boolean);source="cached public GitHub data";
         warn("GitHub could not be reached. Showing locally cached public repository details.");
       } else if (scope==="owned") {
-        data=starterData().map(prepare).filter(Boolean);source="sample catalog";
-        warn("GitHub could not be reached (possibly an API rate limit). Showing a limited starter catalog; try Refresh later.");
+        let offline = null;
+        try { offline = await fetchStaticCatalog(); } catch (_) { /* static files may also be offline */ }
+        if (ticket!==requestIndex) return;
+        data=(offline || starterData()).map(prepare).filter(Boolean);
+        source=offline ? "static public catalog snapshot" : "limited starter catalog";
+        warn(offline
+          ? "GitHub API is unavailable. Showing all public repositories from the October 27, 2026 snapshot; update dates and stars may be out of date."
+          : "GitHub API and local catalog unavailable. Showing a limited starter collection; try Refresh later.");
       } else {
         data=[];source="temporarily unavailable";
         warn("Starred repositories could not be loaded from GitHub. Try Refresh later or open the Starred link above.");
