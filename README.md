@@ -4,7 +4,7 @@ RiceDeck is a polished personal start page for Rice2k: a fast, customizable brow
 
 [Live demo](https://rice2k.github.io/rice2k-startdeck/) · [Download Windows setup ZIP](releases/RiceDeck_Windows_Setup.zip)
 
-**New:** [Rice2K Project Explorer — search all public projects](https://rice2k.github.io/rice2k-startdeck/projects/) · [Search starred repositories](https://rice2k.github.io/rice2k-startdeck/projects/?scope=starred)
+**New:** [Rice2K Project Explorer — search all public projects](https://rice2k.github.io/rice2k-startdeck/projects/) · [Search starred repositories](https://rice2k.github.io/rice2k-startdeck/projects/?scope=starred) · [All public repositories (static)](https://rice2k.github.io/rice2k-startdeck/projects/all-projects.html)
 
 ## Screenshots
 
