@@ -96,3 +96,5 @@ kbd{font:12px ui-monospace,monospace;border:1px solid #466078;border-radius:5px;
 @media(max-width:1000px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-terminal{display:none}.filters{width:100%}}
 @media(max-width:650px){.layout{padding:0 16px}.header-inner{min-height:72px}.brand strong{font-size:15px}nav{gap:9px}nav a{font-size:11px}.hero{padding:35px 0 24px}h1{font-size:36px}.lead{font-size:14px}.search-panel{padding:17px}.project-grid{grid-template-columns:1fr}.filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.filters label:last-child{grid-column:1/-1}.filters select{width:100%;max-width:none}.results-actions{width:100%}.results-actions button{flex:1}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+.static-index-link{color:#b2c5d8;font-size:13px;text-align:center;margin:28px 0 0}
