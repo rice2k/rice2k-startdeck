@@ -1,0 +1,931 @@
+{
+  "generated_at": "2026-10-27",
+  "description": "Public repository discovery fallback. Refresh current metadata through GitHub API when possible.",
+  "owner": "rice2k",
+  "count": 62,
+  "repositories": [
+    {
+      "name": "NW2PNG2.0",
+      "description": "Convert Graal .nw and GMAP level files to images.",
+      "language": "Java",
+      "topics": [
+        "graal",
+        "gmap",
+        "map"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/NW2PNG2.0"
+    },
+    {
+      "name": "Graal-Level-Viewer",
+      "description": "Historical Windows C# viewer of GraalOnline levels.",
+      "language": "C#",
+      "topics": [
+        "graal",
+        "graalonline",
+        "viewer"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graal-Level-Viewer"
+    },
+    {
+      "name": "JavaGraal",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/JavaGraal"
+    },
+    {
+      "name": "jsGConstruct",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/jsGConstruct"
+    },
+    {
+      "name": "gs2-scripts",
+      "description": "Graal Script 2 examples and development references.",
+      "language": "",
+      "topics": [
+        "graalonline",
+        "gs2",
+        "scripts"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/gs2-scripts"
+    },
+    {
+      "name": "pngcheck",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/pngcheck"
+    },
+    {
+      "name": "discord-gs2",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/discord-gs2"
+    },
+    {
+      "name": "discord-spam-bots",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/discord-spam-bots"
+    },
+    {
+      "name": "startpage",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/startpage"
+    },
+    {
+      "name": "mearth",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/mearth"
+    },
+    {
+      "name": "startpage-1",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/startpage-1"
+    },
+    {
+      "name": "filegator",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/filegator"
+    },
+    {
+      "name": "Q-A-Discord-Bot",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Q-A-Discord-Bot"
+    },
+    {
+      "name": "qaDiscordbot",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/qaDiscordbot"
+    },
+    {
+      "name": "GraalOnline-ChatBot",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/GraalOnline-ChatBot"
+    },
+    {
+      "name": "gani-edit",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/gani-edit"
+    },
+    {
+      "name": "MapMaker",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/MapMaker"
+    },
+    {
+      "name": "graalonline_phplevel",
+      "description": "PHP-oriented renderer for GraalOnline level files.",
+      "language": "",
+      "topics": [
+        "graal",
+        "php",
+        "levels"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/graalonline_phplevel"
+    },
+    {
+      "name": "GServer-v2",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/GServer-v2"
+    },
+    {
+      "name": "graal-gmap-generator",
+      "description": "Console-based generator for GraalOnline GMAP files.",
+      "language": "",
+      "topics": [
+        "graal",
+        "gmap",
+        "generator"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/graal-gmap-generator"
+    },
+    {
+      "name": "Graal-Char-View",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graal-Char-View"
+    },
+    {
+      "name": "Graal-Links",
+      "description": "GraalOnline-related community website links.",
+      "language": "Python",
+      "topics": [
+        "graal",
+        "links"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graal-Links"
+    },
+    {
+      "name": "Offline-HTML-encrypt-decrypt-tool-for-graal-PMs",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Offline-HTML-encrypt-decrypt-tool-for-graal-PMs"
+    },
+    {
+      "name": "Graal-Gmap-Generater-PHp",
+      "description": "PHP project generating GraalOnline GMAP data.",
+      "language": "PHP",
+      "topics": [
+        "graal",
+        "gmap",
+        "php"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graal-Gmap-Generater-PHp"
+    },
+    {
+      "name": "graal-online-account-creator",
+      "description": "PHP-based GraalOnline account creation system.",
+      "language": "PHP",
+      "topics": [
+        "graal",
+        "account",
+        "security"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/graal-online-account-creator"
+    },
+    {
+      "name": "Graalians-Archives",
+      "description": "Graalians/Graal preservation collection.",
+      "language": "HTML",
+      "topics": [
+        "graalians",
+        "archive"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graalians-Archives"
+    },
+    {
+      "name": "Hacker-Bootstrap-Template",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Hacker-Bootstrap-Template"
+    },
+    {
+      "name": "simple-website-template-folder-style-v1",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/simple-website-template-folder-style-v1"
+    },
+    {
+      "name": "cybersources",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/cybersources"
+    },
+    {
+      "name": "Discord-History-Tracker",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Discord-History-Tracker"
+    },
+    {
+      "name": "desktopPet",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/desktopPet"
+    },
+    {
+      "name": "awesome-privacy",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/awesome-privacy"
+    },
+    {
+      "name": "ALL-about-RSS",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/ALL-about-RSS"
+    },
+    {
+      "name": "Discord-All-Tools-In-One",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Discord-All-Tools-In-One"
+    },
+    {
+      "name": "answer",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/answer"
+    },
+    {
+      "name": "vbully",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/vbully"
+    },
+    {
+      "name": "The-MALWARE-Repo",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/The-MALWARE-Repo"
+    },
+    {
+      "name": "ufonet",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/ufonet"
+    },
+    {
+      "name": "rice2k-rainmeter-control-bar",
+      "description": "Rainmeter desktop control bar for Windows.",
+      "language": "HTML",
+      "topics": [
+        "windows",
+        "rainmeter",
+        "widgets"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2k-rainmeter-control-bar"
+    },
+    {
+      "name": "Computer-Asset-System-Info",
+      "description": "Windows computer asset inventory and network/security diagnostics.",
+      "language": "Python",
+      "topics": [
+        "windows",
+        "helpdesk",
+        "it-support"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Computer-Asset-System-Info"
+    },
+    {
+      "name": "Graalians-Discord-Server-Tool-Hub",
+      "description": "GraalOnline tools for GMAP, .nw levels, GANI, and GS2.",
+      "language": "PHP",
+      "topics": [
+        "graal",
+        "graalonline",
+        "gmap",
+        "gani",
+        "gs2"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Graalians-Discord-Server-Tool-Hub"
+    },
+    {
+      "name": "AOL-Progz",
+      "description": "Historical AOL and AIM proggies catalog and digital preservation project.",
+      "language": "JavaScript",
+      "topics": [
+        "aol",
+        "aim",
+        "retro",
+        "archive"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/AOL-Progz"
+    },
+    {
+      "name": "r2k-rescuedesk-usb",
+      "description": "Service-bench USB command center for Windows repair, backup, triage and WinPE.",
+      "language": "PowerShell",
+      "topics": [
+        "windows-repair",
+        "rescue",
+        "usb-toolkit"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/r2k-rescuedesk-usb"
+    },
+    {
+      "name": "WiFi-Vault-Pro",
+      "description": "Windows Wi-Fi profiles and network diagnostics suite.",
+      "language": "Python",
+      "topics": [
+        "windows",
+        "wifi",
+        "networking"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/WiFi-Vault-Pro"
+    },
+    {
+      "name": "BTK-Graal-Guild-site-Remake-Archive",
+      "description": "Preserved Graal guild site and forum archive with Wayback references.",
+      "language": "HTML",
+      "topics": [
+        "graal",
+        "graalonline",
+        "archive",
+        "retro-web"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/BTK-Graal-Guild-site-Remake-Archive"
+    },
+    {
+      "name": "Cyber-Tool-Atlas",
+      "description": "Searchable directory of cybersecurity learning tools and resources.",
+      "language": "JavaScript",
+      "topics": [
+        "cybersecurity",
+        "tool-directory"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Cyber-Tool-Atlas"
+    },
+    {
+      "name": "rice2k-magic-tasks",
+      "description": "Windows task planner with reminders, calendar, templates and focus mode.",
+      "language": "Python",
+      "topics": [
+        "task-planner",
+        "productivity",
+        "windows"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2k-magic-tasks"
+    },
+    {
+      "name": "retro-dvd-player-complete",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/retro-dvd-player-complete"
+    },
+    {
+      "name": "old-free-online-resources",
+      "description": "Searchable archive of old free online resources and 1990s-2000s web links.",
+      "language": "HTML",
+      "topics": [
+        "retro-web",
+        "web-archive",
+        "wayback-machine"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/old-free-online-resources"
+    },
+    {
+      "name": "rice2k-computer-cleaner",
+      "description": "Windows maintenance and diagnostics app.",
+      "language": "JavaScript",
+      "topics": [
+        "windows",
+        "pc-maintenance"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2k-computer-cleaner"
+    },
+    {
+      "name": "rice2k",
+      "description": "Rice2K profile and open-source project directory.",
+      "language": "",
+      "topics": [
+        "open-source",
+        "portfolio",
+        "windows",
+        "graalonline"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2k"
+    },
+    {
+      "name": "rice2k-startdeck",
+      "description": "Customizable RiceDeck homepage and searchable Rice2K Project Explorer.",
+      "language": "HTML",
+      "topics": [
+        "startpage",
+        "dashboard",
+        "bookmarks"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2k-startdeck"
+    },
+    {
+      "name": "life-found-a-weird-way-website",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/life-found-a-weird-way-website"
+    },
+    {
+      "name": "rice2ks-web-directory-recreation",
+      "description": "Recreated old-web directory with historical source files.",
+      "language": "PHP",
+      "topics": [
+        "retro-web",
+        "web-directory"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/rice2ks-web-directory-recreation"
+    },
+    {
+      "name": "minimind",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/minimind"
+    },
+    {
+      "name": "SubSeven-Historical-Archive",
+      "description": "SubSeven-era software preservation and research notes.",
+      "language": "HTML",
+      "topics": [
+        "historical-archive"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/SubSeven-Historical-Archive"
+    },
+    {
+      "name": "Neo-Password-Generator-",
+      "description": "Browser password and passphrase generator using Web Crypto API.",
+      "language": "HTML",
+      "topics": [
+        "password-generator",
+        "browser"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Neo-Password-Generator-"
+    },
+    {
+      "name": "Methodus2000",
+      "description": "AOL-era Methodus tool history archive.",
+      "language": "HTML",
+      "topics": [
+        "aol",
+        "historical-archive"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Methodus2000"
+    },
+    {
+      "name": "CoolKids-Archive-Website",
+      "description": "Early-2000s website restoration and recovered artifacts.",
+      "language": "",
+      "topics": [
+        "web-preservation",
+        "retro-web",
+        "archive"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/CoolKids-Archive-Website"
+    },
+    {
+      "name": "Rice2k-Macro-Studio",
+      "description": "Windows desktop macro recorder for mouse, keyboard, and browser automation.",
+      "language": "HTML",
+      "topics": [
+        "windows",
+        "macro",
+        "automation"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Rice2k-Macro-Studio"
+    },
+    {
+      "name": "Rice2k-Encryption-Software",
+      "description": "Early preview of a Windows file and folder encryption application.",
+      "language": "C#",
+      "topics": [
+        "windows",
+        "encryption",
+        "preview"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Rice2k-Encryption-Software"
+    },
+    {
+      "name": "Rice2k-Folder-Vault",
+      "description": "Experimental encrypted Windows folder vault in C#; alpha and runtime testing pending.",
+      "language": "C#",
+      "topics": [
+        "windows",
+        "csharp",
+        "encryption",
+        "alpha"
+      ],
+      "owner": {
+        "login": "rice2k"
+      },
+      "private": false,
+      "homepage": null,
+      "stargazers_count": 0,
+      "html_url": "https://github.com/rice2k/Rice2k-Folder-Vault"
+    }
+  ]
+}
