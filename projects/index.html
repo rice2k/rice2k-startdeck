@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>Rice2K Project Explorer | Search GitHub Projects, Windows Tools & Graal Archives</title>
+  <meta name="description" content="Search public Rice2K GitHub repositories: Windows repair utilities, PowerShell and Python tools, GraalOnline development resources, retro website archives, dashboards, and open-source projects.">
+  <meta name="keywords" content="Rice2K, Christopher Schumacher, GitHub projects, Windows repair tools, PowerShell, GraalOnline, GS2, web preservation, free utilities, Graalians, retro web, archives">
+  <link rel="canonical" href="https://rice2k.github.io/rice2k-startdeck/projects/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rice2K Project Explorer">
+  <meta property="og:description" content="One place to browse and search Rice2K's public GitHub projects and favorite open-source tools.">
+  <meta property="og:url" content="https://rice2k.github.io/rice2k-startdeck/projects/">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a href="#results" class="skip-link">Skip to project results</a>
+  <header class="site-header">
+    <div class="layout header-inner">
+      <a class="brand" href="https://github.com/rice2k" aria-label="Rice2K GitHub profile">
+        <span class="brand-mark" aria-hidden="true">R<span>2</span>K</span>
+        <span><strong>RICE2K</strong><small>PROJECT EXPLORER</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="https://github.com/rice2k">GitHub Profile</a>
+        <a href="../">RiceDeck</a>
+        <a href="https://github.com/stars/rice2k">Starred</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> OPEN-SOURCE PROJECTS & DIGITAL PRESERVATION</p>
+        <h1 id="hero-title">Find something <span>worth building with.</span></h1>
+        <p class="lead">Search Windows utilities, troubleshooting tools, GraalOnline resources, retro web archives, productivity apps, and other projects maintained or curated by Rice2K.</p>
+      </div>
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-top"><i></i><i></i><i></i><span>rice2k / discover</span></div>
+        <p><span>$</span> explore --owner rice2k</p>
+        <p class="terminal-muted">Loading public projects...</p>
+        <p><span>✓</span> Search by name, keyword, or topic</p>
+        <p><span>✓</span> Filter by language and category</p>
+        <p><span>✓</span> Browse saved open-source finds</p>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Find projects">
+      <div class="search-label-row">
+        <label for="search">Search the collection</label>
+        <kbd>/</kbd>
+      </div>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke-width="2"/><path d="m16 16 5 5" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Try Graal, repair USB, PowerShell, vault, old web..." autocomplete="off" aria-describedby="search-help">
+        <button id="clear-search" type="button" class="clear-button" hidden>Clear</button>
+      </div>
+      <p id="search-help" class="muted search-help">Search understands common terms and aliases such as GS2 / Graal Script 2 and PC repair / Windows recovery.</p>
+
+      <div class="quick-links" aria-label="Suggested searches">
+        <button type="button" data-quick="Graal">GraalOnline</button>
+        <button type="button" data-quick="Windows">Windows tools</button>
+        <button type="button" data-quick="archive">Web archives</button>
+        <button type="button" data-quick="PowerShell">PowerShell</button>
+        <button type="button" data-quick="Discord">Discord</button>
+        <button type="button" data-quick="security">Security</button>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Browse controls">
+      <div class="scope-switch" role="group" aria-label="Repository collection">
+        <button type="button" data-scope="owned" class="active" aria-pressed="true">My public repositories</button>
+        <button type="button" data-scope="starred" aria-pressed="false">Starred repositories</button>
+      </div>
+      <div class="filters">
+        <label>Category <select id="category"><option value="all">All categories</option></select></label>
+        <label>Language <select id="language"><option value="all">All languages</option></select></label>
+        <label>Sort <select id="sort">
+          <option value="relevance">Most relevant</option>
+          <option value="updated">Recently updated</option>
+          <option value="stars">Most starred</option>
+          <option value="az">Name A–Z</option>
+        </select></label>
+      </div>
+    </section>
+
+    <section id="results" aria-labelledby="result-title">
+      <div class="results-heading">
+        <div>
+          <h2 id="result-title">Explore projects</h2>
+          <p class="muted" id="results-summary" role="status" aria-live="polite">Loading public GitHub repositories...</p>
+        </div>
+        <div class="results-actions">
+          <button id="copy-link" class="secondary-button" type="button">Copy search link</button>
+          <button id="refresh" class="secondary-button" type="button">Refresh</button>
+        </div>
+      </div>
+      <div id="warning" class="notice" role="alert" hidden></div>
+      <div id="project-grid" class="project-grid" aria-live="off"></div>
+      <div id="empty" class="empty-state" hidden>
+        <h3>No matching projects</h3>
+        <p>Try fewer filters or another keyword. Only publicly accessible repositories appear.</p>
+        <button type="button" id="reset">Reset search</button>
+      </div>
+      <div class="load-more-wrap"><button id="load-more" class="primary-button" type="button" hidden>Show more projects</button></div>
+    </section>
+
+    <section class="footer-panel" aria-labelledby="about-title">
+      <h2 id="about-title">About this directory</h2>
+      <p>This is a free, browser-based catalog of <a href="https://github.com/rice2k">Rice2K's public GitHub work</a> and publicly starred repositories. Project details are retrieved from the public GitHub API when available; recent results may be cached on your device. No sign-in or paid API is required, and private repositories are never included.</p>
+      <div class="footer-links"><a href="https://github.com/rice2k?tab=repositories">All repositories</a><a href="https://github.com/rice2k?tab=stars">Starred on GitHub</a><a href="../">RiceDeck homepage</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="layout"><span>© Rice2K · Christopher Schumacher</span><span>Built for discovery, preservation, and practical tools.</span></div></footer>
+  <noscript><div class="no-script">JavaScript is needed for live filtering. <a href="https://github.com/rice2k?tab=repositories">Browse public GitHub repositories instead.</a></div></noscript>
+</body>
+</html>
