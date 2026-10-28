@@ -262,6 +262,11 @@
     els.more.hidden=matches.length<=visible.length;
     els.empty.hidden=matches.length>0;
     els.clear.hidden=!state.q;
+    const codeSearch=$("#code-search");
+    if (codeSearch) {
+      codeSearch.hidden=state.scope!=="owned";
+      codeSearch.href="https://github.com/search?q="+encodeURIComponent("user:rice2k "+state.q.trim())+"&type=code";
+    }
     els.summary.textContent=matches.length+" matching "+(state.scope==="owned"?"public repositories":"public starred repositories")+
       " · "+data.length+" indexed"+(source?" · "+source:"");
   }
@@ -329,7 +334,7 @@
     state.q=b.dataset.quick;els.input.value=state.q;filtersChanged();els.input.focus();
   }));
   els.more.addEventListener("click",()=>{state.count+=PAGE_SIZE;render();});
-  els.refresh.addEventListener("click",()=>{try{localStorage.removeItem(cacheKey());}catch(_){} load(true);});
+  els.refresh.addEventListener("click",()=>load(true));
   els.copy.addEventListener("click",async()=>{
     syncUrl();
     try {
